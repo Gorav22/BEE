@@ -1,0 +1,19 @@
+{
+  "name": "code-snippet",
+  "version": "1.0.0",
+  "description": "Here I use Mongodb, express, react, nodejs and flask (python) world most difficult combination",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "frontend": "cd frontend && npm run dev",
+    "backend": "cd backend && npm start",
+    "flask": "cd flaskk && source venv/bin/activate && pip install -r requirements.txt && python app.py",
+    "all": "concurrently \"npm run backend\" \"npm run frontend\" \"npm run flask\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "concurrently": "^9.1.0"
+  }
+}
