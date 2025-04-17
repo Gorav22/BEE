@@ -37,6 +37,10 @@ const projectSchema = new mongoose.Schema({
   jsCode: {
     type: String,
     default: 'console.log("Hello World")'
+  },
+  isPublic: {
+    type: Boolean,
+    default: true,
   }
 });
 

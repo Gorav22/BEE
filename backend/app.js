@@ -7,6 +7,7 @@ var cors = require("cors");
 
 var indexRouter = require('./routes/index');
 var usersRouter = require('./routes/users'); // Import the analyze route
+// const issueRoutes = require("./routes/issueRoute");
 
 var app = express();
 
@@ -23,9 +24,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 app.use(cors());
 
 app.use('/', indexRouter);
-app.use('/users', usersRouter); // Add the analyze route
-
-// catch 404 and forward to error handler
+app.use('/users', usersRouter); 
+// app.use("/api", issueRoutes);
 app.use(function(req, res, next) {
   next(createError(404));
 });
